@@ -1,2 +1,13 @@
-#!/bin/bash
-gcc -c "with proper grammar, but the outcome is a piece of art\n"
+#include <stdio.h>
+
+
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
+int main(void)
+{
+	printf("Programming is like building a multilingual puzzle\n");
+	return (0);
+}
