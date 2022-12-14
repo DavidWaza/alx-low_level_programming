@@ -1,26 +1,29 @@
 #include <stdio.h>
 
 /**
- * main - print sum of all multiples of 3 or 5 below 1024
+ * main - print firdt 50 fib.
  *
  * Return: Always 0 (Success)
  */
 
 int main(void)
 {
-	int num;
-	int sum;
+	int i;
+	long a = 1, b = 2;
+	long sum = a + b;
 
-	sum = 0;
+	printf("%ld, %ld, ", a, b);
 
-	for (num = 0; num < 1024; num++)
+	for (i = 3; i < 50; ++i)
 	{
-		if ((num % 3 == 0) || (num % 5 == 0))
-		{
-			sum += num;
-		}
+		printf("%ld, ", sum);
+		a = b;
+		b = sum;
+		sum = a + b;
 	}
-	printf("%d\n", sum);
-
+	if (i == 50)
+	{
+		printf("%ld ", sum);
+	}
 	return (0);
 }
