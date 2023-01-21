@@ -1,1 +1,1 @@
-static library
+Pointers, arrays and strings
